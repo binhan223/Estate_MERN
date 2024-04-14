@@ -71,7 +71,7 @@ export default function SignUp() {
           onChange={handleChange}
         />
         <button disabled={loading} className="bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80">
-          {loading ? 'Loading...' : 'Đăng ký'}
+          {loading ? 'Loading...' : 'Đăng Ký'}
         </button>
       </form>
       <div className="flex gap-2 mt-5">
