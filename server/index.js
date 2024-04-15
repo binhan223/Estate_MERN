@@ -1,5 +1,5 @@
 import express from 'express';
-// import cookieParser from 'cookie-parser';
+import cookieParser from 'cookie-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import userRouter from './routes/user.route.js';
@@ -18,7 +18,7 @@ const app = express();
 
 app.use(express.json());
 
-// app.use(cookieParser);
+app.use(cookieParser());
 
 
 const port = process.env.PORT || 5000;
